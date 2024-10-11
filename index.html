@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NotionTasker - Chrome拡張機能</title>
+    <title>NotionTasker - Notionにタスクを簡単追加するChrome拡張機能</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -25,21 +25,27 @@
             border-radius: 5px;
             margin-top: 20px;
         }
+        code {
+            background-color: #f4f4f4;
+            padding: 2px 5px;
+            border-radius: 3px;
+        }
     </style>
 </head>
 <body>
     <header>
         <h1>NotionTasker</h1>
-        <p>NotionにタスクをすばやくKに追加するChrome拡張機能</p>
+        <p>ChromeブラウザからNotionにタスクを素早く追加できる拡張機能</p>
     </header>
 
     <main>
         <section>
-            <h2>機能</h2>
+            <h2>主な機能</h2>
             <ul>
-                <li>ChromeブラウザからNotionにタスクを簡単に追加</li>
+                <li>テキスト入力からNotionのデータベースにタスクを追加</li>
                 <li>シンプルで使いやすいUI</li>
-                <li>Notionデータベースとのシームレスな連携</li>
+                <li>ショートカットキーでの素早い操作</li>
+                <li>Notionアカウントとの安全な連携</li>
             </ul>
         </section>
 
@@ -47,9 +53,26 @@
             <h2>使用方法</h2>
             <ol>
                 <li>Chrome Web Storeから拡張機能をインストール</li>
-                <li>NotionのAPIキーとデータベースIDを設定</li>
-                <li>Chrome拡張機能のポップアップからタスクを入力して追加</li>
+                <li>拡張機能の設定画面でNotionのAPIキーとデータベースIDを設定</li>
+                <li>Chrome拡張機能のアイコンをクリックしてポップアップを開く</li>
+                <li>タスクを入力し、送信ボタンをクリックまたはCtrl+Enterでタスクを追加</li>
             </ol>
+        </section>
+
+        <section>
+            <h2>ショートカット</h2>
+            <ul>
+                <li><code>Alt+N</code>: NotionTaskerのポップアップを開く</li>
+                <li><code>Ctrl+Enter</code>: タスク入力欄でタスクを送信</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>セキュリティ</h2>
+            <ul>
+                <li>ユーザーのNotion APIキーとデータベースIDは、ローカルのChrome StorageにAESによって暗号化されて保存</li>
+                <li>タスク内容は、Notionのサーバーに直接送信され、拡張機能のサーバーには保存されない</li>
+            </ul>
         </section>
 
         <section>
