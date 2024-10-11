@@ -38,6 +38,6 @@ NotionTasker（以下、「当拡張機能」）は、ユーザーのプライ�
 
 9. お問い合わせ
 本プライバシーポリシーに関するご質問やお問い合わせは、以下の連絡先までお願いします：
-info.hirokitakamura@gmail.com
+https://github.com/infoHiroki/NotionTasker/issues
 
 以上の内容をご確認いただき、NotionTaskerのご利用をお願いいたします。
