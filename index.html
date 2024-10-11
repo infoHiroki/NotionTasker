@@ -3,17 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NotionTasker プライバシーポリシー</title>
+    <title>NotionTasker - Chrome拡張機能</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1, h2 {
+            color: #2c3e50;
+        }
+        .button {
+            display: inline-block;
+            background-color: #3498db;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+    </style>
 </head>
 <body>
-    <div id="content"></div>
-    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
-    <script>
-        fetch('PRIVACY_POLICY.md')
-            .then(response => response.text())
-            .then(text => {
-                document.getElementById('content').innerHTML = marked.parse(text);
-            });
-    </script>
+    <header>
+        <h1>NotionTasker</h1>
+        <p>NotionにタスクをすばやくKに追加するChrome拡張機能</p>
+    </header>
+
+    <main>
+        <section>
+            <h2>機能</h2>
+            <ul>
+                <li>ChromeブラウザからNotionにタスクを簡単に追加</li>
+                <li>シンプルで使いやすいUI</li>
+                <li>Notionデータベースとのシームレスな連携</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>使用方法</h2>
+            <ol>
+                <li>Chrome Web Storeから拡張機能をインストール</li>
+                <li>NotionのAPIキーとデータベースIDを設定</li>
+                <li>Chrome拡張機能のポップアップからタスクを入力して追加</li>
+            </ol>
+        </section>
+
+        <section>
+            <h2>インストール</h2>
+            <a href="#" class="button">Chrome Web Storeでインストール</a>
+        </section>
+
+        <section>
+            <h2>プライバシーポリシー</h2>
+            <p>ユーザーのプライバシーを尊重し、個人情報の保護に努めています。詳細は以下のリンクをご覧ください。</p>
+            <a href="PRIVACY_POLICY.md">プライバシーポリシー</a>
+        </section>
+
+        <section>
+            <h2>お問い合わせ</h2>
+            <p>ご質問やフィードバックがありましたら、<a href="https://github.com/infoHiroki/NotionTasker-Privacy-Policy/issues">GitHubのIssues</a>にてお問い合わせください。</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 NotionTasker. All rights reserved.</p>
+    </footer>
 </body>
 </html>
